@@ -22,14 +22,14 @@ Modeling and simulating the trajectory of the projectile in a 2D space (x and y)
 
 ### 2D Movement Equations:
 
-\[
+$$
 \begin{aligned}
     dX(t) &= V_x(t) \, dt \\
     dV_x(t) &= \left( -\frac{dC}{m} V_x(t) \|\vec{V}(t)\| \right) \, dt + \sigma_x dW_x(t) \\
     dY(t) &= V_y(t) \, dt \\
     dV_y(t) &= \left( -g - \frac{dC}{m} V_y(t) \|\vec{V}(t)\| \right) \, dt + \sigma_y dW_y(t)
 \end{aligned}
-\]
+$$
 
 Where:
 - $X(t), Y(t)$: Position of the projectile in each dimension.
@@ -44,9 +44,9 @@ Where:
 
 Wiener processes \( W(t) \) for each dimension have the following properties:
 
-- $ W(0) = 0 $
-- $ W(t) $ is independent of $ W(s) $ for $ t > s $
-- The distribution of $ W(s) - W(t) $ follows $ \mathcal{N}(0, t - s) $
+- $W(0) = 0$
+- $W(t)$ is independent of $W(s)$ for $t > s$
+- The distribution of $W(s) - W(t)$ follows $\mathcal{N}(0, t - s)$
 
 ## 3. Solving SDE: Euler-Maruyama Method
 
