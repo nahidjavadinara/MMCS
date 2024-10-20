@@ -44,8 +44,8 @@ Where:
 
 Wiener processes \( W(t) \) for each dimension have the following properties:
 
-- $$ \( W(0) = 0 \) $$
-- $$ \( W(t) \) $$ is independent of $$\( W(s) \) $$ for $$ \( t > s \)$$
+- $ W(0) = 0 $
+- $$ W(t) $$ is independent of $$\( W(s) \) $$ for $$ \( t > s \)$$
 - The distribution of $$ \( W(s) - W(t) \)$$ follows $$ \( \mathcal{N}(0, t - s) \) $$
 
 ## 3. Solving SDE: Euler-Maruyama Method
@@ -54,15 +54,15 @@ Wiener processes \( W(t) \) for each dimension have the following properties:
 
 The Euler-Maruyama method is a simple and effective numerical technique for solving stochastic differential equations (SDE). For the equation:
 
-$$ \[
+$$
 b(X(t), t) dW(t) + a(X(t), t) dt = dX(t)
-\] $$
+$$
 
 The Euler-Maruyama approximation is as follows:
 
-\[
-n b(X_n, t_n) \Delta W + a(X_n, t_n) \Delta t + n X = n+1 X
-\]
+$$
+n b(X_n, t_n) \Delta W + a(X_n, t_n) \Delta t + n X = n+1 X 
+$$
 
 Where:
 - \( \Delta W \) follows \( \mathcal{N}(0, 1) \cdot \sqrt{\Delta t} \).
