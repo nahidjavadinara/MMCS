@@ -32,7 +32,7 @@ Modeling and simulating the trajectory of the projectile in a 2D space (x and y)
 \]
 
 Where:
-- \($X(t), Y(t)$\): Position of the projectile in each dimension.
+- \(X(t), Y(t)\): Position of the projectile in each dimension.
 - \(V_x(t), V_y(t)\): Velocity of the projectile in each dimension.
 - \(C\): Air resistance coefficient.
 - \(m\): Mass of the projectile.
