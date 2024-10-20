@@ -11,7 +11,7 @@ Modeling and simulating the trajectory of the projectile in a 2D space (x and y)
 2. **Effective Forces**:
     - Gravitational force (g): Acts downward (along the y-axis).
     - Air resistance force (\(\vec{F}_d\)): Proportional to the square of the projectile’s velocity and acts in the opposite direction of the movement.
-    - Wind force (\(\vec{W}(t)\)): Comprises horizontal and vertical wind forces that are variable and random in both direction and intensity.
+    - Wind force $(\vec{W}(t)$): Comprises horizontal and vertical wind forces that are variable and random in both direction and intensity.
 3. **Discontinuities**:
     - Air resistance coefficient (C): Follows a normal distribution with a defined mean and standard deviation.
     - Wind force (\(\vec{W}_x(t)\) and \(\vec{W}_y(t)\)): Each component follows a normal distribution with specific means and standard deviations.
@@ -32,21 +32,21 @@ Modeling and simulating the trajectory of the projectile in a 2D space (x and y)
 \]
 
 Where:
-- \(X(t), Y(t)\): Position of the projectile in each dimension.
-- \(V_x(t), V_y(t)\): Velocity of the projectile in each dimension.
-- \(C\): Air resistance coefficient.
-- \(m\): Mass of the projectile.
-- \(g\): Gravitational acceleration.
-- \(\sigma_x, \sigma_y\): Standard deviation of wind fluctuations in each dimension.
-- \(W_x(t), W_y(t)\): Wiener processes (stochastic processes for each dimension).
+- $X(t), Y(t)$: Position of the projectile in each dimension.
+- $V_x(t), V_y(t)$: Velocity of the projectile in each dimension.
+- $C$: Air resistance coefficient.
+- $m$: Mass of the projectile.
+- $g$: Gravitational acceleration.
+- $\sigma_x, \sigma_y$: Standard deviation of wind fluctuations in each dimension.
+- $W_x(t), W_y(t)$: Wiener processes (stochastic processes for each dimension).
 
 ## 2. Wiener Processes:
 
 Wiener processes \( W(t) \) for each dimension have the following properties:
 
 - $ W(0) = 0 $
-- $$ W(t) $$ is independent of $$\( W(s) \) $$ for $$ \( t > s \)$$
-- The distribution of $$ \( W(s) - W(t) \)$$ follows $$ \( \mathcal{N}(0, t - s) \) $$
+- $ W(t) $ is independent of $ W(s) $ for $ t > s $
+- The distribution of $ W(s) - W(t) $ follows $ \mathcal{N}(0, t - s) $
 
 ## 3. Solving SDE: Euler-Maruyama Method
 
